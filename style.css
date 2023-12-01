@@ -1,194 +1,270 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+@font-face {
+    font-family: 'font-heading';
+    src: url('./fonts/ttmasterblack.otf');
+}
+@font-face {
+    font-family: 'font-jonathan';
+    src: url('./fonts/JonathanSignature.ttf');
+}
+
+body {
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: 'Courier New', Courier, monospace;
+.bg-yellow {
+    background-color: #F8DE22 !important;
+}
+
+.nav-link {
+    color: rgb(32, 32, 32);
+    font-weight: 600;
+}
+
+.bg-image {
+    background-image: url('./images/background1.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbo-text {
+    font-family: 'font-heading';
+    text-indent: -50px;
+    text-align: left !important;
+    font-size: 88px;
+}
+.jumbo-text2 {
+    font-family: 'font-jonathan';
+    text-align: left;
+    font-size: 18vw;
+    color: #F8DE22;
+    margin-top: -30px;
+}
+
+#menu {
+    background-color: #C70039;
+    padding-top: 30px;
+}
+
+#menu h2 {
+    font-family: 'Archivo Black', sans-serif;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+#menu .menu1 {
+    font-family: 'Archivo Black', sans-serif;
+    color: #F8DE22;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 40px;
+}
+
+#testimonial {
     background-color: #C70039;
 }
 
-nav {
-    display: flex;
-    background-color: yellow;
-    justify-content: space-around;
-    color: black;
-    height: 50px;
-    align-items: center;
+#service {
+    background-color: #C70039;
+    padding-top: 40px;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    width: 40%;
-    justify-content: space-between;
-}
-
-nav ul li a {
-    color: black;
+/* CSS */
+.button-82-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
     text-decoration: none;
-    font-size: 0.8em;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-nav  ul li a:hover {
-    color: red;
+.button-82-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
 }
 
-
-h1 {
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 500%;
+.button-82-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100%
+  );
 }
 
-h2 {
-    color: yellow;
-    font-size: 400%;
+.button-82-front {
+  /* display: block; */
+  position: relative;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+  background: hsl(345deg 100% 47%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
 }
 
-
-@media screen and (max-width: 768px){
-    nav ul {
-        width: 50px;
-    }
-    
-}
-@media screen and (max-width: 577px) {
-    nav ul {
-        display: none;
-    }
+@media (min-width: 768px) {
+  .button-82-front {
+    font-size: 1.25rem;
+    padding: 8px 22px;
+  }
 }
 
- .homepage {    
-    height: 100vh;
-	background-image: url(background1.jpg);
-	background-size: cover;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
- }
+.button-82-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
 
- .homepage:after {
-    content: " ";
-    display: block;
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+#location {
+    background-color: #C70039;
+    padding-top: 50px;
+}
+
+.contact4 {
+    font-family: "Montserrat", sans-serif;
+      color: #8d97ad;
+    font-weight: 300;
+  }
+  
+  .contact4 h1, .contact4 h2, .contact4 h3, .contact4 h4, .contact4 h5, .contact4 h6 {
+    color: #3e4555;
+  }
+  
+  .contact4 .font-weight-medium {
+      font-weight: 500;
+  }
+  
+  .contact4 .form-control {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .contact4 .form-control:focus {
+    border-color: #ffffff;
+  }
+  
+  .contact4 input::-webkit-input-placeholder,
+  .contact4 textarea::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .contact4 input:-ms-input-placeholder,
+  .contact4 textarea:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .contact4 input::placeholder,
+  .contact4 textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .contact4 .right-image {
     position: absolute;
-    top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
-    background-color: black;
-    opacity: .5;
-
- }
-nav .logo {
-    display: flex; /* Adds display: flex to the logo container */
-    align-items: center;
-}
- 
-
-nav h4 {
-    margin: 0; /* Removes margin from the logo text */
-}
-
-.paket img {
-    max-width: 270px;
-    object-fit: contain;
-    border-radius: 0;
-}
-
-.paket {
-    background-color: #fff;
-    grid-template-columns: auto;
-    grid-template-rows: 175px 15px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    width: 270px;
-    height: 325px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    margin-left: 38px;
-    border-radius: 0;
-    padding-bottom: 10px;
-    
-}
-
-.paket-img {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-h5 {
-    color: yellow;
-    font-size: 400%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.maps {
-    width:400px;
-    height:450px;
-  
-
- }
-
- .lastslide {
-    background-color:  yellow; 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 50px;
-    padding-bottom: 10px;
-    padding-left: 125px;
-    padding-right: 125px;
+    top: 0;
   }
   
-  .mancur {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 750px;
- 
-  }
-
-  .last {
-    padding-top: 25px;
-    color: white;
-    width: 350px;
-  }
-
-  .terakhir2 {
-    padding-top: 25px;
-    color: white;
-    padding-top: 25px;
-    fill: #FFFFFF;
-    fill-rule:nonzero;
-    stroke-width:1px;
-    stroke-linecap:butt;
-    stroke-linejoin:miter;
-    stroke-miterlimit:10;
+  .contact4.bg-info {
+      background-color: #188ef4 !important;
   }
   
-  .terakhir2 svg {
-    width: 40px;
-    margin-top: 40px;
-    margin-left: 25px;
+  .contact4 .text-inverse {
+      color: #3e4555 !important;
+  }
+  
+  @media (min-width: 1024px) {
+      .contact4 .contact-box {
+      padding: 80px 105px 80px 0px;
+      }
+  }
+  
+  @media (max-width: 767px) {
+      .contact4 .contact-box {
+      padding-left: 15px;
+      padding-right: 15px;
+      }
+  }
+  
+  @media (max-width: 1023px) {
+      .contact4 .right-image {
+              position: relative;
+              bottom: -95px;
+      }
   }
 
-  .lokasi {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    width: 900px;
+footer {
+    background-color: #C70039;
+    padding-top: 50px;
   }
 
-  .ft {
-    color:white;
+  .navbar-nav a.nav-link.active {
+    /* Add your desired styles for the active link here */
+    color: red; /* Change this to the desired color */
+    font-weight: bold; /* Change this to the desired font weight or any other style */
   }
-
-  .ftl{
-    color: #fff;
-  }
-
-
-
-

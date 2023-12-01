@@ -1,111 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>AFR SEAFOOD</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Final_Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./plugins/owl-carousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav>
-        <div class="logo">
-            <h4>AFR Seafood</h4>
-            </div>
-            <ul>
-                <li><a href="#home">Home</a>
-                <li><a href="#menu">Menu</a>
-                <li><a href="#service">Service</a>
-                <li><a href="#testimoni">Testimoni</a>
-                <li><a href="#location">Location</a>
-                <li><a href="#contact">Contact</a>
-            </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-yellow sticky-top">
+    <div class="container d-flex align-items-center">
+      <div class="flex-shrink-0">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+        </a>
+      </div>
+      <div class="flex-grow-1 ms-1">
+        <h4>AFR Seafood</h4>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item me-5">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" href="#testimonial">Testimonial</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" href="#service">Service</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link" href="#location">Contact</a>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <section id="Home">
+    <div class="bg-image">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="d-flex justify-content-center align-items-center flex-column" style="height: 100vh;">
+          <div>
+            <h1 class="text-white mb-0 jumbo-text">Premium</h1>
+          </div>
+          <div style="margin-top: -90px;">
+            <h1> <span class="jumbo-text2">and</span> <span class="jumbo-text text-white">Fresh Seafood</span></h1>
+          </div>
         </div>
-    </nav>
-     
-    <section id="home">
-    <div class="homepage">
-            <h1>PREMIUM</h1>
-            <h2>And</h2>
-            <h1>HEALTH SEAFOOD</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu">
+    <div class="container">
+      <div class="row justify-content-center">
+        <h2>Menu</h2>
+        <h2 class="menu1">Paket Family</h2>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./images/paket mantap.jpg" class="card-img-top rounded" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Paket Mantap</h5>
+              <p class="card-text">Kepiting, Lobster, Cumi, Udang, Gurita, Super Mix Kerang 1kg, 9 Jagung Manis</p>
+              <a href="#" class="btn btn-primary">200k</a>
+            </div>
+          </div>
         </div>
-    </section><br><br><br>
 
-    <section id="menu">
-        <center><h5>MENU </h5></center>
-        <h1>PAKET SIRKEL</h1>
-        <div class="paket-img">
-            <div class="paket">
-                <img src="family1.jpg" alt="">
-                <h4 class="judul">Paket Mantap <b>250k</b></h4>
-                <p class="desk">Kepiting, Lobster, Cumi - cumi, udang, mix kerang 2kg, 10 jagung.</p>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./images/paket nikmat.jpg" class="card-img-top rounded" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Paket Nikmat</h5>
+              <p class="card-text">Kepiting, Lobster, Udang, Gurita, Super Mix Kerang 1kg, dan 8 Jagung Manis</p>
+              <a href="#" class="btn btn-primary">180k</a>
             </div>
-            <div class="paket">
-                <img src="family2.jpg" alt="">
-                <h4 class="judul">Paket Nikmat</h4>
-                <p class="desk">Kepiting, Lobster, Udang, Kerang mix kerang 1kg, 8 jagung</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./images/paket baper.jpg" class="card-img-top rounded" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Paket Baper</h5>
+              <p class="card-text">Kepiting, Lobster, Gurita, Super Mix Kerang 1kg, dan 7 Jagung Manis.</p>
+              <a href="#" class="btn btn-primary">160k</a>
             </div>
-            <div class="paket">
-                <img src="family3.jpg" alt="">
-                <h4 class="judul"> Paket Baper</h4>
-                <p class="desk">Kepiting, Lobster, Cumi, Gurita, Mix kerang 1kg, 6 jagung.</p>
-            </div><br><tr>
+          </div>
+        </div>
 
-
-        <section id="location">
-            <div>
-                <h1><b class="lokasi"> Our Location</b></h1>
-                <center><iframe class="maps"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.7185076412075!2d107.44440547331502!3d-6.557175364097313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e690fb318e50ddd%3A0xce1f148ea489788e!2sTaman%20Air%20Mancur%20Sri%20Baduga!5e0!3m2!1sen!2sid!4v1696759339695!5m2!1sen!2sid"
-                width="400"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                display="flex" 
-                flex-direction="row-reverse"
-                ></iframe></center>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./images/paket kenyang.jpg" class="card-img-top rounded" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Paket Kenyang</h5>
+              <p class="card-text">Kepiting, Lobster, Udang, Super Mix Kerang 1kg, dan 6 Jagung Manis.</p>
+              <a href="#" class="btn btn-primary">150K</a>
             </div>
+          </div>
+        </div><br>
+        <h2 class="menu1">Paket Couple</h2>
 
-           
-            <footer>
-                <section id="contact us"></section>
-                <div class="lastslide">
-                    <div class="last">
-                        <h1 class="ft"><b>Coder</b></h1>
-                        <p class="ftl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, sint!</p>
-                    </div>
-                    <div class="terakhir2">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
-                        
-                            <g transform="scale(8.53333,8.53333)">
-                                <path
-                                d="M24,4h-18c-1.105,0 -2,0.895 -2,2v18c0,1.105 0.895,2 2,2h10v-9h-3v-3h3v-1.611c0,-3.05 1.486,-4.389 4.021,-4.389c1.214,0 1.856,0.09 2.16,0.131v2.869h-1.729c-1.076,0 -1.452,0.568 -1.452,1.718v1.282h3.154l-0.428,3h-2.726v9h5c1.105,0 2,-0.895 2,-2v-18c0,-1.105 -0.896,-2 -2,-2z"
-                                ></path>
-                            </g>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
-                       
-                        <g transform="scale(5.12,5.12)">
-                            <path
-                            d="M16,3c-7.16752,0 -13,5.83248 -13,13v18c0,7.16752 5.83248,13 13,13h18c7.16752,0 13,-5.83248 13,-13v-18c0,-7.16752 -5.83248,-13 -13,-13zM16,5h18c6.08648,0 11,4.91352 11,11v18c0,6.08648 -4.91352,11 -11,11h-18c-6.08648,0 -11,-4.91352 -11,-11v-18c0,-6.08648 4.91352,-11 11,-11zM37,11c-1.10457,0 -2,0.89543 -2,2c0,1.10457 0.89543,2 2,2c1.10457,0 2,-0.89543 2,-2c0,-1.10457 -0.89543,-2 -2,-2zM25,14c-6.06329,0 -11,4.93671 -11,11c0,6.06329 4.93671,11 11,11c6.06329,0 11,-4.93671 11,-11c0,-6.06329 -4.93671,-11 -11,-11zM25,16c4.98241,0 9,4.01759 9,9c0,4.98241 -4.01759,9 -9,9c-4.98241,0 -9,-4.01759 -9,-9c0,-4.98241 4.01759,-9 9,-9z"
-                            ></path>
-                        </g>
-                
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
-                   
-                    <g transform="scale(5.12,5.12)">
-                        <path
-                        d="M50.0625,10.4375c-1.84766,0.82031 -3.82812,1.37109 -5.91016,1.62109c2.125,-1.27344 3.75781,-3.28906 4.52344,-5.6875c-1.98437,1.17578 -4.19141,2.03125 -6.53125,2.49219c-1.875,-2 -4.54687,-3.24609 -7.50391,-3.24609c-5.67969,0 -10.28516,4.60156 -10.28516,10.28125c0,0.80469 0.09375,1.58984 0.26953,2.34375c-8.54687,-0.42969 -16.12109,-4.52344 -21.19531,-10.74609c-0.88672,1.52344 -1.39062,3.28906 -1.39062,5.17187c0,3.56641 1.8125,6.71484 4.57422,8.5625c-1.6875,-0.05469 -3.27344,-0.51953 -4.66016,-1.28906c0,0.04297 0,0.08594 0,0.12891c0,4.98438 3.54688,9.13672 8.24609,10.08594c-0.85937,0.23438 -1.76953,0.35938 -2.70703,0.35938c-0.66406,0 -1.30859,-0.0625 -1.9375,-0.1875c1.3125,4.08203 5.10938,7.0625 9.60547,7.14453c-3.51562,2.75781 -7.94922,4.39844 -12.76953,4.39844c-0.83203,0 -1.64844,-0.04687 -2.44922,-0.14453c4.54687,2.92188 9.95312,4.62109 15.76172,4.62109c18.91406,0 29.25781,-15.66797 29.25781,-29.25391c0,-0.44531 -0.01172,-0.89453 -0.02734,-1.33203c2.00781,-1.44922 3.75,-3.26172 5.12891,-5.32422z"
-                        ></path>
-                    </g>
-                                                                               
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./images/gurita x cumi.jpg" class="card-img-top rounded" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Gurita X Cumi</h5>
+              <p class="card-text">Baby Gurita, Cumi-cumi, Mix Kerang, 3 Jagung Manis.</p>
+              <a href="#" class="btn btn-primary">85k</a>
+            </div>
+          </div>
+        </div>
 
-                        </div>
-                    </div>
-    </section><br><br><br>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./images/gurita x udang.jpg" class="card-img-top rounded" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Gurita X Udang</h5>
+              <p class="card-text">Baby Gurita, Udang, Mix Kerang, 3 Jagung Manis.</p>
+              <a href="#" class="btn btn-primary">85k</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./images/cumi x udang.jpg" class="card-img-top rounded" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cumi X Udang</h5>
+              <p class="card-text">Cumi-cumi, Udang, Mix Kerang, 3 Jagung Manis.</p>
+              <a href="#" class="btn btn-primary">85k</a>
+            </div>
+          </div>
+        </div>
+
+       
+        <h2 class="menu1">Paket Jomblo</h2>
+
         
-    
-</body>
-</html>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./images/udang.jpg" class="card-img-top rounded" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Udang</h5>
+              <p class="card-text">Udang + 1 Jagung Manis.</p>
+              <a href="#" class="btn btn-primary">35k</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+              <img src="./images/lobster.jpg" class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Lobser</h5>
+                <p class="card-text">Lobster +5 KerangHijau + 1Jagung Manis.</p>
+                <a href="#" class="btn btn-primary">40k</a>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./images/cumi.jpg" class="card-img-top rounded" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cumi-cumi</h5>
+              <p class="card-text">Cumi-cumi + 1 Jagung Manis.</p>
+              <a href="#" class="btn btn-primary">35k</a>
+            </div>
+          </div>
+        </div>
+        <h2 class="menu1">Paket Kerang</h2>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./images/super mix kerang.jpg" class="card-img-top rounded" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Super Mix Kerang</h5>
+              <p class="card-text">Super Mix Kerang 1kg.</p>
+              <a href="#" class="btn btn-primary">80k</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./images/Kerang hijau x kerang simping x kerang batik.jpg" class="card-img-top rounded" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kerang Hijau x Kerang Simping X Kerang Batik </h5>
+              <p class="card-text">Kerang Hijau X Kerang Simping X Kerang Batik.</p>
+              <a href="#" class="btn btn-primary">80k</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+              <img src="./images/kerang hijau.jpg" class="card-img-top rounded" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kerang Hijau </h5>
+                <p class="card-text">Kerang Hijau 500gr.</p>
+                <a href="#" class="btn btn-primary">80k</a>
+              </div>
+            </div>
+          </div>
+        <h2 class="menu1"> Minuman</h2>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./images/air mineral.jpg" class="card-img-top rounded" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Air Mineral</h5>
+              <p class="card-text">Hangat / Dingin</p>
+              <a href="#" class="btn btn-primary">5k</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-5">
+          <div class="card">
+            <img src="./images/aneka-jus.jpg" class="card-img-top rounded" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Aneka Jus</h5>
+              <p class="card-text">Jus Alpukat, Jus Naga, Jus Mangga, Jus Jeruk, Jus Strawberry.</p>
+              <a href="#" class="btn btn-primary">10k</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./images/teh manis.jpeg" class="card-img-top rounded" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Teh Manis</h5>
+              <p class="card-text">Dingin / Hangat.</p>
+              <a href="#" class="btn btn-primary">10k</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
